@@ -35,7 +35,7 @@ function App() {
     let result=await response.text();
     setUrl(result)
     setShow(false)
-    
+   
   }
   return (
     <>
