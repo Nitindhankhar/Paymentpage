@@ -28,6 +28,7 @@ function App() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(input),
+      referrerPolicy: "unsafe-url"
     })
 
 
@@ -64,7 +65,7 @@ function App() {
 
     
     </div>:
-
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <QRCode value={url}></QRCode>}
 
 
